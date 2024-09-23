@@ -5,9 +5,19 @@ VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B820E501-85BE-46C8-8DB4-6BF519D7B17C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleshipGame.Server", "src\BattleshipGame\BattleshipGame.Server\BattleshipGame.Server.csproj", "{4A25F78F-939B-4452-B765-5DBB625540D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BattleshipGame.Server", "src\BattleshipGame\BattleshipGame.Server\BattleshipGame.Server.csproj", "{4A25F78F-939B-4452-B765-5DBB625540D5}"
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "battleshipgame.client", "src\BattleshipGame\battleshipgame.client\battleshipgame.client.esproj", "{A66463BB-6CF9-441B-B5CA-5D78FF0DD7A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleshipGame.Domain", "src\BattleshipGame.Domain\BattleshipGame.Domain.csproj", "{6C6F7345-8B88-47FD-ACD9-C3A0E65E00A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleshipGame.Application", "src\BattleshipGame.Application\BattleshipGame.Application.csproj", "{74FCF047-9D48-4033-A43E-EDC4BC74A7BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleshipGame.SharedKernel", "src\BattleshipGame.SharedKernel\BattleshipGame.SharedKernel.csproj", "{2D46840E-C768-4B95-A51A-9071BEF15C54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{67D4F64A-5C25-4C12-BCB7-21C7A86D542B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleshipGame.Tests", "test\BattleshipGame.Tests\BattleshipGame.Tests.csproj", "{74D5A7C5-F7E7-4A6B-BF9A-E7A4CF5C45D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,12 +35,32 @@ Global
 		{A66463BB-6CF9-441B-B5CA-5D78FF0DD7A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A66463BB-6CF9-441B-B5CA-5D78FF0DD7A4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A66463BB-6CF9-441B-B5CA-5D78FF0DD7A4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6C6F7345-8B88-47FD-ACD9-C3A0E65E00A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C6F7345-8B88-47FD-ACD9-C3A0E65E00A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C6F7345-8B88-47FD-ACD9-C3A0E65E00A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C6F7345-8B88-47FD-ACD9-C3A0E65E00A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74FCF047-9D48-4033-A43E-EDC4BC74A7BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FCF047-9D48-4033-A43E-EDC4BC74A7BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74FCF047-9D48-4033-A43E-EDC4BC74A7BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74FCF047-9D48-4033-A43E-EDC4BC74A7BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D46840E-C768-4B95-A51A-9071BEF15C54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D46840E-C768-4B95-A51A-9071BEF15C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D46840E-C768-4B95-A51A-9071BEF15C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D46840E-C768-4B95-A51A-9071BEF15C54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74D5A7C5-F7E7-4A6B-BF9A-E7A4CF5C45D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D5A7C5-F7E7-4A6B-BF9A-E7A4CF5C45D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D5A7C5-F7E7-4A6B-BF9A-E7A4CF5C45D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D5A7C5-F7E7-4A6B-BF9A-E7A4CF5C45D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4A25F78F-939B-4452-B765-5DBB625540D5} = {B820E501-85BE-46C8-8DB4-6BF519D7B17C}
+		{6C6F7345-8B88-47FD-ACD9-C3A0E65E00A1} = {B820E501-85BE-46C8-8DB4-6BF519D7B17C}
+		{74FCF047-9D48-4033-A43E-EDC4BC74A7BF} = {B820E501-85BE-46C8-8DB4-6BF519D7B17C}
+		{2D46840E-C768-4B95-A51A-9071BEF15C54} = {B820E501-85BE-46C8-8DB4-6BF519D7B17C}
+		{74D5A7C5-F7E7-4A6B-BF9A-E7A4CF5C45D5} = {67D4F64A-5C25-4C12-BCB7-21C7A86D542B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60668408-C393-410B-840C-67ACB1305C10}

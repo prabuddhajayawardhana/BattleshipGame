@@ -11,11 +11,11 @@ const Board = ({ grid, onCellClick }: BoardProps) => {
       {grid.map((row, rowIndex) => (
         <div key={rowIndex} className="row">
           {row.map((cell, colIndex) => (
+           
             <Cell
               key={colIndex}
               value={cell}
               onClick={() => onCellClick(colIndex, rowIndex)}
-              className={`cell ${cell === 'H' ? 'hit' : cell === 'M' ? 'miss' : ''}`}
             />
           ))}
         </div>

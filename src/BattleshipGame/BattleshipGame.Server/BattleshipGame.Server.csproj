@@ -17,6 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\BattleshipGame.Application\BattleshipGame.Application.csproj" />
+    <ProjectReference Include="..\..\BattleshipGame.SharedKernel\BattleshipGame.SharedKernel.csproj" />
     <ProjectReference Include="..\battleshipgame.client\battleshipgame.client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
