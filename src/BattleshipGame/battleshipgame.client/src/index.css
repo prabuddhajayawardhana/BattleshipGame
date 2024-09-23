@@ -1,0 +1,57 @@
+body {
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.App {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  grid-template-rows: repeat(10, 50px);
+  margin: 20px auto;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #007bff;
+  background-color: #e7f1ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+  background-color: #d0e7ff;
+  transform: scale(1.1);
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #555;
+}
