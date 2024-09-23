@@ -1,77 +1,38 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 20px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh; 
-}
-
 .App {
     text-align: center;
-    max-width: 600px;
-    background: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-}
-
-h1 {
-    color: #212529; 
-    margin-bottom: 20px;
-    font-size: 2em;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(10, 40px);
-    grid-template-rows: repeat(10, 40px); 
-    gap: 5px;
-    margin: 0 auto; 
-}
-
-.cell {
-    width: 40px; 
-    height: 40px; 
-    border: 2px dotted #000000; 
-    background-color: #ffffff; 
+  }
+  
+  .grid {
+    display: inline-block;
+    border: 1px solid #000;
+  }
+  
+  .row {
     display: flex;
-    align-items: center;
+  }
+  
+  .cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: flex;
     justify-content: center;
-    font-size: 16px; 
-    font-weight: bold;
-    color: #000000; 
+    align-items: center;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
-}
-
-.cell:hover {
-    background-color: #e9ecef;
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
-}
-
-.cell.hit {
-    background-color: #000000;
-    color: white; 
-}
-
-.cell.miss {
-    background-color: #cccccc; 
-    color: black; 
-}
-
-.message {
+  }
+  
+  .X {
+    background-color: red;
+    color: white;
+  }
+  
+  .O {
+    background-color: blue;
+    color: white;
+  }
+  
+  .start-button, .restart-button {
     margin-top: 20px;
-    font-size: 18px;
-    color: #212529; 
-}
-
-.game-over {
-    color: #dc3545;
-    font-size: 24px;
-    margin-top: 20px;
-    font-weight: bold;
-}
+    padding: 10px 20px;
+  }
+  
